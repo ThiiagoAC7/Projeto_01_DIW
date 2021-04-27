@@ -31,95 +31,6 @@
     display: none;
 }
 
-/* MEDIA QUERIE */
-@media screen and (max-width: 1200px) {
-
-    .header{        
-        position: fixed;
-        top: 0px;        
-        z-index: 999;
-    }
-
-    .menu {
-        display: absolute;
-    }
-
-    .menu-nav{
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        flex-wrap: wrap;
-        align-content:center;
-        justify-content: center;
-        top: 0px;
-        width: 40%;
-        margin-left: 60%;
-        height: 0%;
-        background-color: #cc4560;
-        overflow: hidden;
-        -webkit-transition: height 0.3s;
-        -moz-transition: height 0.3s;
-        -ms-transition: height 0.3s;
-        -o-transition: height 0.3s;
-        transition: height 0.3s;
-    }
-
-    .menu-nav a {
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .menu-icon {
-        width: 50px;
-        height: inherit;
-        display: block;
-        position: absolute;
-        top: 55px;
-        right: 30px;
-        line-height: 60px;
-        color: rgb(19, 18, 18);
-        z-index: 999;
-    }
-    #menuToggle:checked ~ label i:nth-child(2) {
-      display: block;
-    }
-    #menuToggle:checked ~ label i:first-child {
-      display: none;
-    }
-    #menuToggle:not(:checked) ~ label i:first-child {
-      display: block;
-    }
-    #menuToggle:not(:checked) ~ label i:nth-child(2) {
-      display: none;
-    }
-  
-    #menuToggle:checked ~ nav {
-        height: 100%;
-    }
-    .menu-icon i {
-        font-size: 1.7em;
-    }
-
-    .menu-pesquisa {
-        margin-bottom: 20px;
-    }
-
-    footer .logo {
-        display: flex;
-        flex-direction: column;
-        width:100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .section-principal{
-        margin-top: 200px;
-    }
-}
-/* MEDIA QUERIE */
-
 /* HEADER */
 
 
@@ -150,7 +61,6 @@
 .carousel-item {
     margin-bottom: 20px;
 }
-
 
 /* PRINCIPAL */
 
@@ -263,3 +173,107 @@
 }
 
 /* FOOTER */
+
+
+/* MEDIA QUERIE */
+@media screen and (max-width: 1200px) {
+
+    .header{        
+        position: fixed;
+        top: 0px;        
+        z-index: 999;
+    }
+
+    .menu {
+        display: absolute;
+        margin-top: 0px;
+    }
+
+    .menu-nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content:center;
+        justify-content: flex-end;
+        top: 0px;
+        width: 40%;
+        margin-left: 60%;
+        height: 0%;
+        background-color: #cc4560;
+        overflow: hidden;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+    }
+
+    .menu-nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu-icon {
+        width: 50px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 30px;
+        line-height: 60px;
+        color: rgb(19, 18, 18);
+        z-index: 999;
+    }
+    #menuToggle:checked ~ label i:nth-child(2) {
+      display: block;
+    }
+    #menuToggle:checked ~ label i:first-child {
+      display: none;
+    }
+    #menuToggle:not(:checked) ~ label i:first-child {
+      display: block;
+    }
+    #menuToggle:not(:checked) ~ label i:nth-child(2) {
+      display: none;
+    }
+  
+    #menuToggle:checked ~ nav {
+        height: 55%;
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+
+    .menu-pesquisa {
+        margin-bottom: 20px;
+    }
+
+    footer .logo {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-principal{
+        margin-top: 200px;
+    }
+
+    .cards {    
+        margin: 0;
+    }
+
+    .card {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .carregar-card{
+        margin-top: 10px;
+    }
+}
+/* MEDIA QUERIE */
